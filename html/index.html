@@ -1,0 +1,240 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<title>Продажа фильмов</title>
+	<meta charset="UTF-8">
+	<link href="css/style.css" rel="stylesheet" type="text/css"/>
+	
+</head>
+<body>
+	<div class="wrapper">
+
+		<header>
+			<div class="logo">
+				<img src="images/logo.svg">
+				<div class="title">Продажа фильмов</div>
+				<div class="title-small">Фильмы</div>
+				<div class="title-small">Доставка</div>
+				<div class="title-small">Корзина</div>
+			</div>
+			<a href="#" class="add-button" id="open-popup">Войти</a>
+		</header>
+
+		<div class="contain">
+			<nav>
+			<div class="nameFilter">Фильтр</div>
+			<div class="content-filter">
+				<form id="filter_form">
+					<div class="filter-box">
+						<span class="bold fs14">Цена</span>
+						<div class="filter-box_wrap-input">
+							<div class="box-input">
+								<span>от</span>
+								<input type="text" name="" id="pr-price-ot">
+							</div>
+							<div class="box-input">
+								<span>до</span>
+								<input type="text" name="" id="pr-price-do">
+							</div>
+						</div>
+					</div>
+					<div class="filter-box" id="filter_form_oplaty">
+						<span class="bold fs14">Форма оплаты</span>
+						<div class="filter-box_wrap-check">
+							<div class="box-check-area">
+								<span class="box-ch"><input type="checkbox" id="nal" name="brand" value="нал"></span>
+								<label for="nal">нал</label>
+							</div>
+							<div class="box-check-area">
+								<span class="box-ch"><input type="checkbox" id="beznal" name="brand" value="безнал"></span>
+								<label for="beznal">безнал</label>
+							</div>
+						</div>
+					</div>
+					<div class="filter-box" id="film-genre">
+						<span class="bold fs14">Жанр фильма</span>
+						<div class="filter-box_wrap-check">
+							<div class="box-check-area">
+								<span class="box-ch"><input type="checkbox" id="boevik" name="" value="Боевик"></span>
+								<label for="boevik">Боевик</label>
+							</div>
+							<div class="box-check-area">
+								<span class="box-ch"><input type="checkbox" id="comedy" name="" value="Комедия"></span>
+								<label for="comedy">Комедия</label>
+							</div>
+							<div class="box-check-area">
+								<span class="box-ch"><input type="checkbox" id="horror" name="" value="Ужасы"></span>
+								<label for="horror">Ужасы</label>
+							</div>
+							<div class="box-check-area">
+								<span class="box-ch"><input type="checkbox" id="fantastic" name="" value="Фантастика"></span>
+								<label for="fantastic">Фантастика</label>
+							</div>
+							<div class="box-check-area">
+								<span class="box-ch"><input type="checkbox" id="mult" name="" value="Мультфильм"></span>
+								<label for="mult">Мультфильм</label>
+							</div>
+						</div>
+					</div>
+					<div class="filter-box" id="film-country">
+						<span class="bold fs14">Страна производства</span>
+						<div class="filter-box_wrap-check">
+							<div class="box-check-area">
+								<span class="box-ch"><input type="checkbox" id="rus" name="" value="Русские"></span>
+								<label for="rus">Русские</label>
+							</div>
+							<div class="box-check-area">
+								<span class="box-ch"><input type="checkbox" id="foreign" name="" value="Зарубежные"></span>
+								<label for="foreign">Зарубежные</label>
+							</div>
+						</div>
+					</div>
+				</form>
+			</div>
+			</nav>
+
+			<main id="main">
+				<h2>Список фильмов</h2>
+				<div class="form-filter">
+					<label>Сортировать по:</label>
+					<select class="select-class" id="sort-po" value=''>
+						<option selected disabled value=""></option>
+						<option value="po_date">По дате выпуска</option>
+						<option value="po_date">По рейтингу</option>
+						<option value="po_price_deshevle">По цене (дешевле)</option>
+						<option value="po_price_doroge">По цене (дороже)</option>
+					</select>
+				</div>
+				<!-- <div class="all-article" id="all-article"> -->
+				<!---->
+				<!-- </div> -->
+				<article>
+					<div class="article-contain">
+						<div class="article-img">
+							<img src="API/img/1.jpg" alt="">
+						</div>
+						<div class="article-box">
+							<div class="article-box-title">Сокровище Счастливчика (2017)</div>
+							<div class="article-box-property">Жанр фильма: Боевик</div>
+							<div class="article-box-property">Страна производства: Россия</div>
+							<div class="article-box-property">Рейтинг: 52 %</div>
+						</div>
+						<div class="article-price">Цена: 520 руб.</div>
+						<a href="#" class="article-more">Подробнее...</a>
+						<a href="#" class="article-basket">В корзину</a>
+					</div>
+				</article>
+				<article>
+					<div class="article-contain">
+						<div class="article-img">
+							<img src="API/img/2.jpg" alt="">
+						</div>
+						<div class="article-box">
+							<div class="article-box-title">Джон Уик 3 (2019)</div>
+							<div class="article-box-property">Жанр фильма: Боевик</div>
+							<div class="article-box-property">Страна производства: Россия</div>
+							<div class="article-box-property">Рейтинг: 71 %</div>
+						</div>
+						<div class="article-price">Цена: 710 руб.</div>
+						<a href="#" class="article-more">Подробнее...</a>
+						<a href="#" class="article-basket">В корзину</a>
+					</div>
+				</article>
+				<article>
+					<div class="article-contain">
+						<div class="article-img">
+							<img src="API/img/3.jpg" alt="">
+						</div>
+						<div class="article-box">
+							<div class="article-box-title">Сталинград (2013)</div>
+							<div class="article-box-property">Жанр фильма: Боевик</div>
+							<div class="article-box-property">Страна производства: Россия</div>
+							<div class="article-box-property">Рейтинг: 47 %</div>
+						</div>
+						<div class="article-price">Цена: 470 руб.</div>
+						<a href="#" class="article-more">Подробнее...</a>
+						<a href="#" class="article-basket">В корзину</a>
+					</div>
+				</article>
+				<article>
+					<div class="article-contain">
+						<div class="article-img">
+							<img src="API/img/1.jpg" alt="">
+						</div>
+						<div class="article-box">
+							<div class="article-box-title">Сокровище Счастливчика (2017)</div>
+							<div class="article-box-property">Жанр фильма: Боевик</div>
+							<div class="article-box-property">Страна производства: Россия</div>
+							<div class="article-box-property">Рейтинг: 52 %</div>
+						</div>
+						<div class="article-price">Цена: 520 руб.</div>
+						<a href="#" class="article-more">Подробнее...</a>
+						<a href="#" class="article-basket">В корзину</a>
+					</div>
+				</article>
+				<article>
+					<div class="article-contain">
+						<div class="article-img">
+							<img src="API/img/2.jpg" alt="">
+						</div>
+						<div class="article-box">
+							<div class="article-box-title">Джон Уик 3 (2019)</div>
+							<div class="article-box-property">Жанр фильма: Боевик</div>
+							<div class="article-box-property">Страна производства: Россия</div>
+							<div class="article-box-property">Рейтинг: 71 %</div>
+						</div>
+						<div class="article-price">Цена: 710 руб.</div>
+						<a href="#" class="article-more">Подробнее...</a>
+						<a href="#" class="article-basket">В корзину</a>
+					</div>
+				</article>
+				<article>
+					<div class="article-contain">
+						<div class="article-img">
+							<img src="API/img/3.jpg" alt="">
+						</div>
+						<div class="article-box">
+							<div class="article-box-title">Сталинград (2013)</div>
+							<div class="article-box-property">Жанр фильма: Боевик</div>
+							<div class="article-box-property">Страна производства: Россия</div>
+							<div class="article-box-property">Рейтинг: 47 %</div>
+						</div>
+						<div class="article-price">Цена: 470 руб.</div>
+						<a href="#" class="article-more">Подробнее...</a>
+						<a href="#" class="article-basket">В корзину</a>
+					</div>
+				</article>
+			</main>
+
+		</div>
+
+		<footer></footer>
+
+		<!--popup-->
+		<div id="mypopup" class="popup">
+			<div class="popup-content">
+				<div class="popup-header">
+					<span class="close">&times</span>
+				</div>
+				<h2>Вход в личный кабинет</h2>
+				<div class="popup-main">
+					<div class="popup-main-google">Google</div>
+				</div>
+				<div class="popup-text">
+					После идентификации на сайте</br>
+					Вам будет доступна возможность</br>
+					оставлять отзывы на фильмов
+				</div>
+				
+			</div>
+		</div>
+		<!--end popup-->
+
+	</div>
+	
+
+	<!--script-->
+	<script src="js/json.js"></script>
+	<script src="js/main.js"></script>
+</body>
+</html>

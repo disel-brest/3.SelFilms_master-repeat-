@@ -1,0 +1,17 @@
+.wrapper {
+    width: 1300px;
+    margin: 0px auto;
+    position: relative;
+    background-color: #fff;
+}
+
+h2 {
+    font-size: 24px;
+    font-weight: 700;
+}
+
+h4 {
+    font-size: 18px;
+    font-weight: 700;
+
+}

@@ -1,0 +1,72 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<title>Продажа фильмов</title>
+	<meta charset="UTF-8">
+	<link href="css/style.css" rel="stylesheet" type="text/css"/>
+	
+</head>
+<body>
+	<div class="wrapper">
+
+		<header>
+			<div class="logo">
+				<img src="images/logo.svg">
+				<div class="title">Продажа фильмов</div>
+				<div class="title-small">Фильмы</div>
+				<div class="title-small">Доставка</div>
+				<div class="title-small">Корзина</div>
+			</div>
+			<a href="#" class="add-button" id="open-popup">Войти</a>
+		</header>
+
+		<div class="contain">
+			
+
+			<main id="main">
+				<h2>Корзина</h2>
+				
+				<!-- <div class="all-article" id="all-article"> -->
+				<!---->	
+				<!-- </div> -->
+				<article>
+					<div class="article-contain">
+						<div class="article-img">
+							<img src="images/133.jpg" alt="">
+						</div>
+						<div class="article-box">
+							<div class="article-box-title">Сокровище Счастливчика (2017)</div>
+							<div class="article-box-property">Жанр фильма: Боевик</div>
+							<div class="article-box-property">Страна производства: Россия</div>
+							<div class="article-box-property">Рейтинг: 86 %</div>
+						</div>
+						<div class="basket-count-box">
+							<div class="add-basket-count">
+								<span class="input-group-btn">
+									<button class="button-group-btn" type="button">&lt;</button>
+								</span>
+								<input class="form-control" type="text" name="count" value="1">
+								<span class="input-group-btn">
+									<button class="button-group-btn" type="button">&gt;</button>
+								</span>
+							</div>
+							<a class="basket-delete-link" href="#">Удалить</a>
+						</div>
+						<div class="article-price">Цена: 10.5 руб.</div>
+					</div>
+				</article>
+				<div class="basket-itog-price">
+					<span class="">Итоговая сумма:</span>
+					<span class="bold" id="basket-itog-price">277 руб</span>
+				 </div>
+			</main>
+
+		</div>
+	</div>
+	
+
+	<!--script-->
+	<script src="js/json.js"></script>
+	<script src="js/main.js"></script>
+</body>
+</html>
